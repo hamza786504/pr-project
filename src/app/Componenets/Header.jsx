@@ -41,7 +41,7 @@ export default function Header() {
           {/* CTA Button */}
           <a
             href="#"
-            className="hidden font-semibold md:flex ml-6 hover:bg-transparent hover:border-[#163316] hover:text-[#163316] border border-[#163316] text-white bg-[#163316] px-5 py-2 rounded-full shadow-md transition"
+            className="hidden font-normal md:flex ml-6 hover:bg-transparent hover:border-[#163316] hover:text-[#163316] border border-[#163316] text-white bg-[#163316] px-4 py-1 rounded-full shadow-md transition"
           >
             Get A Quote
           </a>
@@ -64,7 +64,7 @@ export default function Header() {
             {/* CTA Button for mobile */}
             <a
               href="#"
-              className="mx-4 my-2 font-semibold text-center  px-5 py-2 rounded-full hover:bg-transparent hover:border-[#163316] hover:text-[#163316] border border-[#163316] text-white bg-[#163316] transition"
+              className="mx-4 my-2 font-normal text-center px-4 py-1 rounded-full hover:bg-transparent hover:border-[#163316] hover:text-[#163316] border border-[#163316] text-white bg-[#163316] transition"
             >
               Get A Quote
             </a>

@@ -27,7 +27,7 @@ export default function HowItWorks() {
   return (
     <section className="bg-[#f8faff] py-16 px-4 md:px-10">
       <div className="md:max-w-3xl lg:max-w-5xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-purple-700 mb-14">
+        <h2 className=" mb-14 text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-800">
           How it Works
         </h2>
 
@@ -38,7 +38,7 @@ export default function HowItWorks() {
               className={`wow animate__animated animate__fadeInUp`}
               data-wow-delay={`${index * 0.3}s`}
             >
-              <div className="h-full bg-transparent rounded-md border border-purple-600 px-3 py-8 text-center relative">
+              <div className="h-full  rounded-md bg-white shadow-sm px-3 py-8 text-center relative">
                 <div className="absolute -top-7 left-1/2 transform -translate-x-1/2">
                   <div className="bg-purple-700 text-white text-lg font-bold w-14 h-14 flex items-center justify-center rounded-full shadow-lg">
                     {step.id}
@@ -56,7 +56,7 @@ export default function HowItWorks() {
         </div>
 
         <div className="mt-12">
-          <button className="uppercase bg-purple-700 hover:bg-purple-800 text-white font-semibold px-6 py-3 rounded-full transition-all duration-300">
+          <button className="uppercase bg-purple-700 hover:bg-purple-800 px-6 py-2 rounded-full text-sm text-white transition-all duration-300">
             Get Started today
           </button>
         </div>

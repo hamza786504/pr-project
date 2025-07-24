@@ -53,7 +53,7 @@ function Banner() {
           >
             <a
               href="/"
-              className="px-3 py-2 rounded-3xl text-xs sm:text-sm md:text-base font-semibold border-2 text-center text-white border-[#a807ff] bg-[#a807ff] hover:bg-black hover:border-black transition-all ease-in-out uppercase inline-flex items-center gap-2"
+              className="px-3 md:px-4 py-1.5 rounded-3xl text-xs sm:text-sm md:text-base font-normal border-2 text-center text-white border-[#a807ff] bg-[#a807ff] hover:bg-black hover:border-black transition-all ease-in-out uppercase inline-flex items-center gap-2"
             >
               Get Started
               <FaLongArrowAltRight className="ms-0" />
@@ -61,7 +61,7 @@ function Banner() {
 
             <a
               href="/"
-              className="px-3 py-2 rounded-3xl text-xs sm:text-sm md:text-base font-semibold border-2 text-center text-[#242423] bg-transparent border-[#242423] hover:bg-black hover:border-black hover:text-white transition-all ease-in-out uppercase inline-flex items-center gap-2"
+              className="px-3 md:px-4 py-1.5 rounded-3xl text-xs sm:text-sm md:text-base font-normal border-2 text-center text-[#242423] bg-transparent border-[#242423] hover:bg-black hover:border-black hover:text-white transition-all ease-in-out uppercase inline-flex items-center gap-2"
             >
               Request Demo
               <FaLongArrowAltRight className="ms-0" />
@@ -73,7 +73,7 @@ function Banner() {
             data-wow-delay="0.8s"
           >
             <div className="text-xs sm:text-base flex items-center justify-center md:justify-start">
-              <FaCheckCircle size={20} className="mr-3 text-[#0ca72d]" />
+              <FaCheckCircle size={20} className="mr-3 text-pink-600" />
               Trusted by <span className='text-xl mx-1 font-bold'>500K+</span> Businesses Worldwide
             </div>
           </div>
