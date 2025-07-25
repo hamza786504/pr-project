@@ -7,17 +7,17 @@ export default function BoostPresenceSection() {
         {/* Left Content */}
         <div className="w-full md:w-1/2">
           <h2 className="text-center md:text-start text-2xl md:text-3xl font-bold mb-6">
-            Ready to boost your online presence?
+            Lorem ipsum dolor sit amet consectetur?
           </h2>
           <p className="text-center md:text-start text-base md:text-lg leading-relaxed">
-            Join Mentionlytics today and unlock the full potential of social media insights for your business
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis maiores perspiciatis blanditiis iure suscipit!
           </p>
         </div>
 
         {/* Right Button + Benefits */}
         <div className="flex flex-col items-start md:items-center">
-          <button className="bg-red-700 hover:bg-red-800 text-white font-semibold px-6 py-3 rounded-full text-base transition duration-300">
-            Try Mentionlytics for free
+          <button className="bg-red-700 hover:bg-red-800 text-white font-semibold px-6 py-3 rounded-full text-base transition duration-300 capitalize">
+            quo distinctio
           </button>
           <div className="justify-center w-full mt-4 text-sm flex flex-col md:flex-row md:items-center text-white space-y-1 md:space-y-0 md:space-x-6">
             <div className="justify-center md:justify-start flex items-center space-x-2">

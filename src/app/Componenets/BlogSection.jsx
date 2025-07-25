@@ -5,22 +5,22 @@ import Link from "next/link";
 const blogPosts = [
   {
     date: "JUL 09, 2025 11:30 AM",
-    title: "Best File Sharing Software Tools to Use in 2025",
+    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     image: "/imgs/blog/1-blog.webp",
   },
   {
     date: "JUL 09, 2025 7:40 AM",
-    title: "Best Contract Management Software in 2025",
+    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     image: "/imgs/blog/2-blog.webp",
   },
   {
     date: "JUL 08, 2025 8:12 AM",
-    title: "Top Knowledge Base Software Tools to Use in 2025",
+    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     image: "/imgs/blog/3-blog.webp",
   },
   {
     date: "JUL 03, 2025 10:55 AM",
-    title: "11 Best Digital Marketing Blogs to Follow in 2025",
+    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.", 
     image: "/imgs/blog/4-blog.webp",
   },
 ];

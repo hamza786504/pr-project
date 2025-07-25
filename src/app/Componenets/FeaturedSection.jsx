@@ -17,21 +17,20 @@ export default function FeaturedSection() {
           data-wow-delay="0.3s"
         >
           <h2 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
-            Make Your Mark with{" "}
-            <span className="text-pink-600">Get Featured</span>
+            Lorem ipsum dolor sit.{" "}
+            <span className="text-pink-600">Lorem ipsum</span>
           </h2>
           <p className="mt-4 text-gray-600 text-base md:text-lg">
-            Want to see your brand in the news? <strong>GetFeatured</strong>{" "}
-            makes it happen. We specialize in placing your story on reputable
-            news websites, expanding your reach and impact.
+
+            Lorem ipsum dolor sit amet consectetur <strong>adipisicing</strong>{" "} elit. Autem quo doloremque omnis, nobis corrupti totam reprehenderit maiores et non obcaecati.
           </p>
 
           {/* Animated Progress Bars */}
           <div className="mt-8 space-y-5">
             {[
-              { label: "100+ Countries Global Reach", value: 90 },
-              { label: "Top Media Networks", value: 85 },
-              { label: "Trusted Audience", value: 92 },
+              { label: "corrupti totam reprehenderit", value: 90 },
+              { label: "maiores et non obcaecati", value: 85 },
+              { label: "sit amet consectetur", value: 92 },
             ].map((item, i) => (
               <div key={i}>
                 <div className="text-sm text-gray-800 font-medium mb-1">

@@ -1,66 +1,65 @@
 import { FaCheckCircle } from "react-icons/fa";
 import { BsFillPersonBadgeFill, BsPersonLinesFill, BsGraphUp } from "react-icons/bs";
 import { MdOutlineTaskAlt, MdOutlineEmail, MdSms } from "react-icons/md";
-
 const features = [
   {
-    title: "Customer Management",
+    title: "Lorem Ipsum Dolor",
     icon: <BsFillPersonBadgeFill className="text-white text-xl" />,
     color: "bg-[#6b5bff]",
     points: [
-      "Organize your Contacts and Prospects",
-      "Manage tasks, meetings, notes and more",
-      "Get 360° view of your customer",
+      "Lorem ipsum dolor sit amet consectetur",
+      "Adipisicing elit sed do eiusmod tempor",
+      "Incididunt ut labore et dolore magna aliqua",
     ],
   },
   {
-    title: "Lead Management",
+    title: "Consectetur Adipiscing",
     icon: <BsPersonLinesFill className="text-white text-xl" />,
     color: "bg-[#2971f5]",
     points: [
-      "Organize the Sales Process with Ease",
-      "Convert promising leads to deals faster",
-      "Measure the effectiveness of marketing",
+      "Ut enim ad minim veniam quis nostrud",
+      "Exercitation ullamco laboris nisi ut aliquip",
+      "Ex ea commodo consequat duis aute",
     ],
   },
   {
-    title: "Sales Pipeline",
+    title: "Sed Do Eiusmod",
     icon: <BsGraphUp className="text-white text-xl" />,
     color: "bg-[#00b341]",
     points: [
-      "Create multiple sales pipeline",
-      "Organise, track and win more deals",
-      "Never lose a deal due to missed followup",
+      "Tempor incididunt ut labore et dolore",
+      "Magna aliqua ut enim ad minim veniam",
+      "Quis nostrud exercitation ullamco laboris",
     ],
   },
   {
-    title: "Task Management",
+    title: "Tempor Incididunt",
     icon: <MdOutlineTaskAlt className="text-white text-xl" />,
     color: "bg-[#ff5e3a]",
     points: [
-      "Keep track of your tasks in real time",
-      "Monitor who's doing what at a glance",
-      "Centralize communication in one place",
+      "Duis aute irure dolor in reprehenderit",
+      "In voluptate velit esse cillum dolore",
+      "Eu fugiat nulla pariatur excepteur",
     ],
   },
   {
-    title: "Email Marketing",
+    title: "Dolore Magna Aliqua",
     icon: <MdOutlineEmail className="text-white text-xl" />,
     color: "bg-[#00e09d]",
     points: [
-      "Upload contacts to create lists",
-      "Save time with automation",
-      "Send emails instantly or schedule later",
+      "Velit esse cillum dolore eu fugiat",
+      "Nulla pariatur excepteur sint occaecat",
+      "Cupidatat non proident sunt in culpa",
     ],
   },
   {
-    title: "SMS Marketing",
+    title: "Minim Veniam Quis",
     icon: <MdSms className="text-white text-xl" />,
     color: "bg-[#ff8f2f]",
     points: [
-      "Schedule and send personalized SMS",
-      "Upload contacts, organise them with lists",
-      "Save time by creating SMS templates",
+      "Officia deserunt mollit anim id est laborum",
+      "Lorem ipsum dolor sit amet consectetur",
+      "Adipisicing elit sed do eiusmod tempor",
     ],
   },
 ];
@@ -70,11 +69,11 @@ export default function SalesFeaturesSection() {
     <section className="bg-[#f3f7ff] py-12 px-4 md:px-10 lg:px-20">
       <div className="text-center max-w-3xl mx-auto mb-10">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-800">
-          A sales platform designed <br />
-          with <span className="text-[#e40078] font-bold">revenue growth</span> in mind
+          Lorem ipsum dolor sit  <br />
+          amet <span className="text-[#e40078] font-bold">consectetur adipisicing</span>  elit fuga.
         </h2>
         <p className="text-gray-600 mt-3 text-sm sm:text-base">
-          Increase your sales teams' efficiency and accelerate the revenue.
+          Lorem ipsum dolor sit amet consectetur.
         </p>
       </div>
 

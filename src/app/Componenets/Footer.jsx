@@ -16,7 +16,7 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-semibold mb-4">About</h3>
           <p className="text-sm text-gray-600">
-            With Zumvu – all your marketing, sales, lead generation, scheduling, automation and customer management tools are integrated into one digital platform for greater results.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur maxime unde iusto deserunt inventore provident perferendis cum earum dignissimos similique!
           </p>
           <div className="flex space-x-3 mt-5">
             <a href="#" className="w-10 h-10 bg-black text-white flex items-center justify-center rounded">
@@ -35,7 +35,7 @@ const Footer = () => {
           <ul className="space-y-2 text-sm text-gray-700">
             <li><a href="#" className="hover:underline">Digital Business Cards</a></li>
             <li><a href="#" className="hover:underline">Digital Catalog</a></li>
-            <li><a href="#" className="hover:underline" className="underline">Portfolio</a></li>
+            <li><a href="#" className="hover:underline">Portfolio</a></li>
             <li><a href="#" className="hover:underline">Content Hub</a></li>
             <li><a href="#" className="hover:underline">Page</a></li>
             <li><a href="#" className="hover:underline">Digital Profile</a></li>

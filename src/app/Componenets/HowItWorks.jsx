@@ -4,22 +4,22 @@ const steps = [
   {
     id: "01",
     icon: "/imgs/press-icon.jpg",
-    text: "Have our team distribute an existing press release or write one for you.",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, laboriosam.",
   },
   {
     id: "02",
     icon: "/imgs/position-icon.png",
-    text: "Choose the industries and regions you’d like to target.",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, laboriosam.",
   },
   {
     id: "03",
     icon: "/imgs/campaign-icon.png",
-    text: "Boost your campaign by adding guaranteed publishing and syndication options",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, laboriosam.",
   },
   {
     id: "04",
     icon: "/imgs/upload-press-release-icon.png",
-    text: "Upload your press release or schedule a consultation with our writing team.",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, laboriosam.",
   },
 ];
 

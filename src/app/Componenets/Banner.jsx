@@ -29,7 +29,7 @@ function Banner() {
           >
             <div className="mb-4 flex items-center justify-center md:justify-start">
               <div className="px-3 py-[4px] text-white font-medium rounded-full bg-gradient-to-r from-[#a238bb] to-[#e64671] bg-cover mr-[15px] text-[13px]"># 1</div>
-              <div className="text-sm">DIGITAL SUCCESS PLATFORM</div>
+              <div className="text-sm">Lorem, ipsum dolor.</div>
             </div>
           </div>
 
@@ -37,14 +37,14 @@ function Banner() {
             className="wow animate__animated animate__fadeInLeft inline-block text-xl sm:text-3xl md:text-5xl text-center md:text-start font-bold leading-tight my-1"
             data-wow-delay="0.2s"
           >
-            Unlock Your Online <span className="text-[#6d02c0]">Growth</span> Potential
+            Lorem ipsum dolor <span className="text-[#6d02c0]">Facilis</span> adipisicing
           </h1>
 
           <p
             className="wow animate__animated animate__fadeInLeft text-base md:text-lg text-[#242423] my-2"
             data-wow-delay="0.4s"
           >
-            Find everything you need to gain more traffic, get leads, boost SEO, engage users and convert sales. From digital products to marketing tools, Zumvu offers everything you need to drive more traffic, generate leads, boost SEO, engage users and convert sales - effortlessly.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt expedita totam sed molestiae quis itaque dignissimos minima eveniet voluptatibus facere consectetur cupiditate est harum quo sunt, aspernatur dolore earum architecto magni in provident delectus natus. Ab ullam quasi adipisci voluptates?
           </p>
 
           <div
@@ -74,7 +74,7 @@ function Banner() {
           >
             <div className="text-xs sm:text-base flex items-center justify-center md:justify-start">
               <FaCheckCircle size={20} className="mr-3 text-pink-600" />
-              Trusted by <span className='text-xl mx-1 font-bold'>500K+</span> Businesses Worldwide
+              Lorem ipsum <span className='text-xl mx-1 font-bold'>500K+</span> amet consectetur.
             </div>
           </div>
         </div>
