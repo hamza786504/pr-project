@@ -1,3 +1,6 @@
+import AnnouncementBar from "./Componenets/Announcementbar";
+import Footer from "./Componenets/Footer";
+import Header from "./Componenets/Header";
 import "./globals.css";
 
 
@@ -23,7 +26,10 @@ export default function RootLayout({ children }) {
       <body
         className={`overflow-x-hidden antialiased`}
       >
+        <AnnouncementBar />
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

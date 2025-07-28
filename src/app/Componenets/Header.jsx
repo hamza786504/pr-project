@@ -13,7 +13,7 @@ export default function Header() {
         
         {/* Logo */}
         <div className="text-lg md:text-xl font-semibold tracking-tight text-gray-800 dark:text-white">
-          Digital Marketing<span className="text-[#a0e527]">.</span>
+          FG Newswire<span className="text-[#a0e527]">.</span>
         </div>
 
         {/* Hamburger (Mobile Only) */}
