@@ -66,50 +66,49 @@ const features = [
 
 export default function SalesFeaturesSection() {
   return (
-    <section className="bg-[#f3f7ff] py-12 px-4 md:px-10 lg:px-20">
-      <div className="text-center max-w-3xl mx-auto mb-10">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-800">
-          Lorem ipsum dolor sit  <br />
-          amet <span className="text-[#e40078] font-bold">consectetur adipisicing</span>  elit fuga.
-        </h2>
-        <p className="text-gray-600 mt-3 text-sm sm:text-base">
-          Lorem ipsum dolor sit amet consectetur.
-        </p>
-      </div>
+    <section className="bg-white py-16 px-4 sm:px-6 lg:px-8">
+      <div className="md:max-w-3xl lg:max-w-5xl mx-auto">
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <h2 className="text-3xl sm:text-4xl capitalize font-bold text-gray-900">
+            Streamlined solutions for <span className="text-[#2563eb]">modern businesses</span>
+          </h2>
+          <p className="mt-4 text-lg text-gray-600">
+            Efficient tools designed to simplify your workflow and boost productivity
+          </p>
+        </div>
 
-      <div className=" md:max-w-3xl lg:max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-       {features.map((feature, index) => (
-  <div
-    key={index}
-    className={`wow animate__animated animate__fadeInUp bg-white shadow-sm rounded-xl p-5 border border-gray-200 hover:shadow-md transition-all duration-300`}
-    data-wow-delay={`${index * 0.2}s`}
-  >
-    <div className="flex items-center gap-3 mb-4">
-      <div className={`w-8 h-8 rounded-md flex items-center justify-center ${feature.color}`}>
-        {feature.icon}
-      </div>
-      <h3 className="text-md sm:text-lg font-semibold text-gray-800">{feature.title}</h3>
-    </div>
-    <ul className="space-y-2 text-sm text-gray-700 mb-4">
-      {feature.points.map((point, i) => (
-        <li key={i} className="flex items-start gap-2">
-          <FaCheckCircle className="text-blue-500 mt-1 text-sm" />
-          <span>{point}</span>
-        </li>
-      ))}
-    </ul>
-    <button className="text-sm text-blue-600 font-medium hover:underline">
-      Learn more &rarr;
-    </button>
-  </div>
-))}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {features.map((feature, index) => (
+            <div
+              key={index}
+              className="group bg-white rounded-xl p-6 border border-gray-100 hover:border-gray-200 transition-all duration-200 shadow-sm hover:shadow-md"
+            >
+              <div className={`w-12 h-12 rounded-lg ${feature.color} flex items-center justify-center mb-5`}>
+                {feature.icon}
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{feature.title}</h3>
+              <ul className="space-y-3">
+                {feature.points.map((point, i) => (
+                  <li key={i} className="flex items-start">
+                    <FaCheckCircle className="text-green-500 mt-1 mr-2 flex-shrink-0" />
+                    <span className="text-gray-600">{point}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-6">
+                <button className="text-sm font-medium text-[#2563eb] hover:text-[#1d4ed8] transition-colors">
+                  Explore feature →
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
 
-      </div>
-
-      <div className="text-center mt-10">
+       <div className="text-center mt-10">
         <button className="bg-purple-700 hover:bg-purple-800 text-white px-6 py-2 rounded-full text-sm">
           KNOW MORE
         </button>
+      </div>
       </div>
     </section>
   );

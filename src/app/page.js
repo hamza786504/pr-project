@@ -7,6 +7,7 @@ import CaseStudiesSection from "./Componenets/CaseStudiesSection";
 import FeaturedSection from "./Componenets/FeaturedSection";
 import HowItWorks from "./Componenets/HowItWorks";
 import Marquee from "./Componenets/Marquee";
+import Packages from "./Componenets/Packages";
 import Publishers from "./Componenets/Publishers";
 import SalesFeaturesSection from "./Componenets/SalesFeaturesSection";
 import WOWInit from "./wow-init";
@@ -18,14 +19,15 @@ export default function Home() {
       <WOWInit />
       
       <Banner />
+      <Publishers />  
       <BoostPresenceSection />
       <HowItWorks />
       <SalesFeaturesSection />
       <FeaturedSection />
       <AppointmentSection />
       <CaseStudiesSection />
+      <Packages />
       <BusinessNetworkSection />
-      <Publishers />
       <BlogSection />
       <Marquee />
     </>

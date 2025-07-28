@@ -12,16 +12,16 @@ export default function AnnouncementBar() {
         </div>
 
         {/* Center - Email */}
-        <div className="hidden sm:inline-flex items-center gap-2 overflow-hidden whitespace-nowrap text-ellipsis hover:underline cursor-pointer transition duration-300 ease-in-out">
+        {/* <div className="hidden sm:inline-flex items-center gap-2 overflow-hidden whitespace-nowrap text-ellipsis hover:underline cursor-pointer transition duration-300 ease-in-out">
           <FaEnvelope className="text-white" />
           <span className="truncate">example@gmail.com</span>
-        </div>
+        </div> */}
 
         {/* Right - Address */}
-        <div className="hidden sm:inline-flex items-center gap-2 overflow-hidden whitespace-nowrap text-ellipsis hover:underline cursor-pointer transition duration-300 ease-in-out">
+        {/* <div className="hidden sm:inline-flex items-center gap-2 overflow-hidden whitespace-nowrap text-ellipsis hover:underline cursor-pointer transition duration-300 ease-in-out">
           <FaLocationDot className="text-white" />
           <span className="truncate">2464 Royal Ln. Mesa, New Jersey 45463</span>
-        </div>
+        </div> */}
       </div>
 
       {/* Social Icons Section */}
