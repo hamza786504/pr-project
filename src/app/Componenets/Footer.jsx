@@ -9,15 +9,34 @@ const Footer = () => {
   const [isChatOpen, setIsChatOpen] = useState(false);
 
   return (
-    <footer className="bg-white border-t text-gray-800 relative">
+    <footer className="bg-white text-gray-800 relative">
       {/* Main Footer Grid */}
-      <div className="max-w-7xl mx-auto px-4 py-10 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
-        {/* About */}
+      <div className="max-w-7xl mx-auto px-4 py-10 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
         <div>
-          <h3 className="text-xl font-semibold mb-4">About</h3>
+          <h3 className="text-xl font-semibold mb-4">FG newswire.</h3>
           <p className="text-sm text-gray-600">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur maxime unde iusto deserunt inventore provident perferendis cum earum dignissimos similique!
           </p>
+        </div>
+
+        <div>
+          <h3 className="text-xl font-semibold mb-4">Usefull Links</h3>
+          <ul className="space-y-2 text-sm text-gray-700">
+            <li><a href="#" className="hover:underline">Home</a></li>
+            <li><a href="#" className="hover:underline">Terms of Services</a></li>
+            <li><a href="#" className="hover:underline">News Room</a></li>
+            <li><a href="#" className="hover:underline">Guidelines</a></li>
+            <li><a href="#" className="hover:underline">Privacy Policy</a></li>
+            <li><a href="#" className="hover:underline">Contact Us</a></li>
+          </ul>
+        </div>
+
+
+        <div className='space-y-3'>
+          <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
+          <a href="tel:+923226612073" className="block hover:underline">+923226612073</a>
+          <a href="mailto:support@fgnewswire.com" className="block hover:underline">support@fgnewswire.com</a>
+          <span href="#" className="block hover:underline">Weekdays: 09:00 AM - 7:00 PM</span>
           <div className="flex space-x-3 mt-5">
             <a href="#" className="w-10 h-10 bg-black text-white flex items-center justify-center rounded">
               <FaFacebookF />
@@ -27,49 +46,6 @@ const Footer = () => {
             </a>
             <a href="#" className="w-10 h-10 bg-black text-white flex items-center justify-center rounded text-xl font-bold">Z</a>
           </div>
-        </div>
-
-        {/* Tools */}
-        <div>
-          <h3 className="text-xl font-semibold mb-4">Tools</h3>
-          <ul className="space-y-2 text-sm text-gray-700">
-            <li><a href="#" className="hover:underline">Digital Business Cards</a></li>
-            <li><a href="#" className="hover:underline">Digital Catalog</a></li>
-            <li><a href="#" className="hover:underline">Portfolio</a></li>
-            <li><a href="#" className="hover:underline">Content Hub</a></li>
-            <li><a href="#" className="hover:underline">Page</a></li>
-            <li><a href="#" className="hover:underline">Digital Profile</a></li>
-            <li><a href="#" className="hover:underline">Appointment Scheduling</a></li>
-            <li><a href="#" className="hover:underline">Sales CRM</a></li>
-            <li><a href="#" className="hover:underline">Site Builder</a></li>
-            <li><a href="#" className="hover:underline">AI ChatBot</a></li>
-            <li><a href="#" className="hover:underline">Email Signature</a></li>
-            <li><a href="#" className="hover:underline">Marketplace</a></li>
-          </ul>
-        </div>
-
-        {/* Resources */}
-        <div>
-          <h3 className="text-xl font-semibold mb-4">Resources</h3>
-          <ul className="space-y-2 text-sm text-gray-700">
-            <li><a href="#" className="hover:underline">Blog</a></li>
-            <li><a href="#" className="hover:underline">Articles</a></li>
-            <li><a href="#" className="hover:underline">News</a></li>
-            <li><a href="#" className="hover:underline">Discover</a></li>
-            <li><a href="#" className="hover:underline">Business Listings</a></li>
-            <li><a href="#" className="hover:underline">SaaS Directory</a></li>
-          </ul>
-        </div>
-
-        {/* Info */}
-        <div>
-          <h3 className="text-xl font-semibold mb-4">Info</h3>
-          <ul className="space-y-2 text-sm text-gray-700">
-            <li><a href="#" className="hover:underline">Login</a></li>
-            <li><a href="#" className="hover:underline">Sign Up</a></li>
-            <li><a href="#" className="hover:underline">About Us</a></li>
-            <li><a href="#" className="hover:underline">Contact Us</a></li>
-          </ul>
         </div>
       </div>
 

@@ -1,6 +1,7 @@
 import AnnouncementBar from "./Componenets/Announcementbar";
 import Footer from "./Componenets/Footer";
 import Header from "./Componenets/Header";
+import ServicesSection from "./Componenets/Services";
 import "./globals.css";
 
 
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
         <AnnouncementBar />
         <Header />
         {children}
+        <ServicesSection />
         <Footer />
       </body>
     </html>
