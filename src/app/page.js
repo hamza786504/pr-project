@@ -4,6 +4,7 @@ import BlogSection from "./Componenets/BlogSection";
 import BoostPresenceSection from "./Componenets/BoostPresenceSection";
 import BusinessNetworkSection from "./Componenets/BusinessNetworkSection";
 import CaseStudiesSection from "./Componenets/CaseStudiesSection";
+import Faq from "./Componenets/Faq";
 import FeaturedSection from "./Componenets/FeaturedSection";
 import HowItWorks from "./Componenets/HowItWorks";
 import Marquee from "./Componenets/Marquee";
@@ -27,6 +28,7 @@ export default function Home() {
       <CaseStudiesSection />
       <Packages />
       <BusinessNetworkSection />
+      <Faq />
       <BlogSection />
       <Marquee />
     </>
