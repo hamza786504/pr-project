@@ -1,0 +1,188 @@
+'use client';
+import Link from 'next/link';
+import { useState, useRef, useEffect } from 'react';
+import { FaBars } from 'react-icons/fa6';
+import { FaChevronDown } from 'react-icons/fa';
+
+export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [plansOpen, setPlansOpen] = useState(false);
+  const dropdownRef = useRef(null);
+  const navItemRef = useRef(null);
+
+  const navLinks = [
+    {
+      link: "Home",
+      href: "/"
+    },
+    {
+      link: "Guidelines",
+      href: "/guidelines"
+    },
+    {
+      link: "Plans",
+      href: "/plans",
+      submenu: [
+        { name: "All Plans", href: "/plans/all" },
+        { name: "Yahoo Press Release", href: "/plans/yahoo-press-release" },
+        { name: "Bloomberg Press Release + Yahoo Finance", href: "/plans/bloomberg-press-release" },
+        { name: "Business Insider", href: "/plans/business-insider" },
+        { name: "Benzinga PR", href: "/plans/benzinga-pr" },
+        { name: "Digital Journal PR", href: "/plans/digital-journal-pr" },
+        { name: "US Times Now Pr", href: "/plans/us-times-now-pr" },
+        { name: "AP News (Associated Press) Press Release", href: "/plans/ap-news-press-release" },
+        { name: "Yahoo Finance + Ap News Press Release", href: "/plans/yahoo-finance-ap-news-press-release" },
+        { name: "Street Insider PR", href: "/plans/street-insider-pr" },
+        { name: "MSN News Press Release", href: "/plans/msn-news-press-release" }
+      ]
+    },
+    {
+      link: "Resellers Plan",
+      href: "/resellers-plan"
+    },
+    {
+      link: "News Room",
+      href: "/news-room"
+    }
+  ];
+
+  // Close dropdown when clicking outside or leaving the dropdown/nav item
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        dropdownRef.current && 
+        !dropdownRef.current.contains(event.target) && 
+        !navItemRef.current.contains(event.target)
+      ) {
+        setPlansOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
+  return (
+    <header className="sticky top-0 z-50 bg-white dark:bg-gray-900 transition-all duration-300 ease-in-out">
+      <div className="flex justify-between items-center px-4 py-4 lg:px-10">
+
+        {/* Logo */}
+        <Link href={"/"} className="text-lg md:text-xl font-semibold tracking-tight text-gray-800 dark:text-white">
+          FG Newswire<span className="text-[#a0e527]">.</span>
+        </Link>
+
+        {/* Hamburger (Mobile Only) */}
+        <button
+          onMouseEnter={() => setIsOpen(!isOpen)}
+          className="block md:hidden text-gray-800 dark:text-white"
+          aria-label="Toggle Menu"
+        >
+          <FaBars className="text-xl" />
+        </button>
+
+        {/* Desktop Menu */}
+        <nav className="hidden md:flex items-center space-x-3 lg:space-x-6 text-sm lg:text-base font-medium text-gray-800 dark:text-gray-200">
+          {navLinks.map((link, key) => (
+            link.link === "Plans" ? (
+              <div key={key} className="relative" ref={navItemRef}>
+                <button
+                  onClick={() => setPlansOpen(!plansOpen)}
+                  className="flex items-center hover:text-[#1e3a1f] transition duration-300"
+                >
+                  {link.link}
+                  <FaChevronDown className={`ml-1 text-xs transition-transform ${plansOpen ? 'transform rotate-180' : ''}`} />
+                </button>
+                
+                {plansOpen && (
+                  <div 
+                    ref={dropdownRef}
+                    className="absolute left-0 mt-2 w-48 bg-white dark:bg-gray-800 rounded-md shadow-lg py-1 z-50 border border-gray-200 dark:border-gray-700"
+                    onMouseLeave={() => setPlansOpen(false)}
+                  >
+                    {link.submenu.map((subItem, subKey) => (
+                      <Link
+                        key={subKey}
+                        href={subItem.href}
+                        className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-green-50 dark:hover:bg-[#1e3a1f]/20"
+                      >
+                        {subItem.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ) : (
+              <Link
+                key={key}
+                href={`${link.href.toLocaleLowerCase()}`}
+                className="hover:text-[#1e3a1f] transition duration-300"
+              >
+                {link.link}
+              </Link>
+            )
+          ))}
+        </nav>
+        
+        {/* CTA Button */}
+        <Link
+          href="signin"
+          className="hidden font-normal text-sm md:flex ml-6 hover:bg-transparent hover:border-[#163316] hover:text-[#163316] border border-[#163316] text-white bg-[#163316] px-4 py-1.5 rounded-full shadow-md transition"
+        >
+          Sign In / UP
+        </Link>
+      </div>
+
+      {/* Mobile Dropdown Menu */}
+      {isOpen && (
+        <div className="md:hidden absolute left-0 top-full w-full bg-white dark:bg-gray-900 shadow transition-all duration-300">
+          <nav className="flex flex-col text-sm text-gray-700 dark:text-gray-200">
+            {navLinks.map((link, key) => (
+              link.link === "Plans" ? (
+                <div key={key} className="py-2 px-4">
+                  <button 
+                    onClick={() => setPlansOpen(!plansOpen)}
+                    className="flex items-center w-full justify-between"
+                  >
+                    {link.link}
+                    <FaChevronDown className={`text-xs transition-transform ${plansOpen ? 'transform rotate-180' : ''}`} />
+                  </button>
+                  {plansOpen && (
+                    <div className="pl-4 mt-2 space-y-2">
+                      {link.submenu.map((subItem, subKey) => (
+                        <Link
+                          key={subKey}
+                          href={subItem.href}
+                          className="block py-1 hover:bg-green-50 dark:hover:bg-[#1e3a1f]/20 rounded transition"
+                        >
+                          {subItem.name}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <Link
+                  key={key}
+                  href={link.href.toLocaleLowerCase()}
+                  className="py-2 px-4 hover:bg-green-50 dark:hover:bg-[#1e3a1f]/20 rounded transition"
+                >
+                  {link.link}
+                </Link>
+              )
+            ))}
+
+            {/* CTA Button for mobile */}
+            <Link
+              href="/signin"
+              className="mx-4 my-2 font-normal text-center px-4 py-1.5 text-sm rounded-full hover:bg-transparent hover:border-[#163316] hover:text-[#163316] border border-[#163316] text-white bg-[#163316] transition"
+            >
+              Sign In / UP
+            </Link>
+          </nav>
+        </div>
+      )}
+    </header>
+  );
+}

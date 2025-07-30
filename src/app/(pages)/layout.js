@@ -1,11 +1,16 @@
-import "./globals.css";
+import AnnouncementBar from "./Componenets/Announcementbar";
+import Footer from "./Componenets/Footer";
+import Header from "./Componenets/Header";
+import ServicesSection from "./Componenets/Services";
+import "../globals.css";
+
 
 export const metadata = {
   title: "FG Newswire",
   description: "FG Newswire Pr Website",
 };
 
-export default function RootLayout({ children }) {
+export default function PagesLayout({ children }) {
 
   return (
     <html lang="en">
@@ -22,7 +27,11 @@ export default function RootLayout({ children }) {
       <body
         className={`overflow-x-hidden antialiased`}
       >
+        <AnnouncementBar />
+        <Header />
         {children}
+        <ServicesSection />
+        <Footer />
       </body>
     </html>
   );
