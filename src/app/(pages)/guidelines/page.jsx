@@ -5,11 +5,11 @@ function Guidelines() {
   return (
     <>
       <div className="py-12 md:max-w-3xl lg:max-w-4xl mx-auto">
-        <h1 className="text-2xl text-purple-500 sm:text-3xl md:text-4xl font-semibold capitalize leading-tight text-center mb-6">
+        <h1 className="text-2xl text-blue-500 sm:text-3xl md:text-4xl font-semibold capitalize leading-tight text-center mb-6">
           Editorial guidelines
         </h1>
         <p className='text-sm md:text-base'>At King Newswire, our commitment to delivering a comprehensive array of news remains unwavering, encompassing diverse sectors ranging from commercial announcements to healthcare updates and beyond. Our core objective is to collaborate closely with each client, ensuring their digital press releases garner the utmost attention and impact. However, it is essential to establish clear editorial guidelines to maintain the integrity and credibility of the information we disseminate.</p>
-        <h2 className="text-2xl text-purple-500 sm:text-3xl md:text-4xl font-semibold capitalize leading-tight text-start mt-8 mb-6">
+        <h2 className="text-2xl text-blue-500 sm:text-3xl md:text-4xl font-semibold capitalize leading-tight text-start mt-8 mb-6">
           Title & summary
         </h2>
         <p>Ensure your headlines are succinct, using 8 to 17 words, as shorter, more precise headlines typically yield better results. Specifically for the Bloomberg + Yahoo package, maintain your press release headline under 110 characters.</p>
@@ -21,7 +21,7 @@ function Guidelines() {
           <li>Clearly describe the substance of the press release in the summary.</li>
           <li>Keep the summary concise and straightforward, with a maximum of 40 words, using only a few short phrases.</li>
         </ul>
-        <h2 className="text-2xl my-4 font-bold text-purple-500">Acceptable Formation of a Press Release</h2>
+        <h2 className="text-2xl my-4 font-bold text-blue-500">Acceptable Formation of a Press Release</h2>
         <ul className="list-disc list-inside space-y-2">
           <li>The press release must have a clear newsworthy, corporate announcement from the company.</li>
           <li>It should not contain investment opinions or advice.</li>
@@ -43,7 +43,7 @@ function Guidelines() {
           and maintain a high standard of credibility and professionalism.
         </p>
 
-        <h2 className="text-2xl font-bold my-4 text-purple-500">Company Contact Details</h2>
+        <h2 className="text-2xl font-bold my-4 text-blue-500">Company Contact Details</h2>
         <p>Provide the following information separately via the form (not within the press release body):</p>
         <ul className="list-disc list-inside space-y-2">
           <li>Company Name</li>
@@ -54,7 +54,7 @@ function Guidelines() {
           <li>City, State, and Country</li>
         </ul>
 
-        <h2 className="text-2xl font-bold my-4 text-purple-500">Acceptable Subject & Content of the Article</h2>
+        <h2 className="text-2xl font-bold my-4 text-blue-500">Acceptable Subject & Content of the Article</h2>
         <ul className="list-disc list-inside space-y-2">
           <li>No SPAM-related terms or dispute-based content</li>
           <li>Content must be original (no plagiarism)</li>
@@ -71,7 +71,7 @@ function Guidelines() {
           <li>Backlink type depends on news outlet policy (no-follow, do-follow, redirect, etc.)</li>
         </ul>
 
-        <h2 className="text-2xl font-bold my-4 text-purple-500">Prohibited Content</h2>
+        <h2 className="text-2xl font-bold my-4 text-blue-500">Prohibited Content</h2>
         <ul className="list-disc list-inside space-y-2">
           <li>Advertorials or over-promotional content</li>
           <li>Sexual or illegal content</li>
@@ -88,7 +88,7 @@ function Guidelines() {
           high-quality content for its readers.
         </p>
 
-        <h2 className="text-2xl font-bold my-4 text-purple-500">Disclaimer</h2>
+        <h2 className="text-2xl font-bold my-4 text-blue-500">Disclaimer</h2>
         <p>
           King Newswire reserves the right to approve, disapprove, or remove content without notice. Each news platform
           has its own guidelines—publication across all listed sites cannot be guaranteed.
@@ -98,7 +98,7 @@ function Guidelines() {
           honored with an additional fee.
         </p>
 
-        <h2 className="text-2xl font-bold my-4 text-purple-500">Review and Publication Process</h2>
+        <h2 className="text-2xl font-bold my-4 text-blue-500">Review and Publication Process</h2>
         <p>
           The review and publication process may take up to 72 hours, including editorial review (within 24 hours) and
           link report delivery (within 24–48 working hours).
