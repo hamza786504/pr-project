@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import { useState, useRef, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa6';
-import { FaChevronDown } from 'react-icons/fa';
+import { FaChevronDown, FaTimes } from 'react-icons/fa';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,8 +50,8 @@ export default function Header() {
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
-        dropdownRef.current && 
-        !dropdownRef.current.contains(event.target) && 
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target) &&
         !navItemRef.current.contains(event.target)
       ) {
         setPlansOpen(false);
@@ -75,11 +75,11 @@ export default function Header() {
 
         {/* Hamburger (Mobile Only) */}
         <button
-          onMouseEnter={() => setIsOpen(!isOpen)}
+          onClick={() => setIsOpen(!isOpen)} // Corrected this
           className="block md:hidden text-gray-800 dark:text-white"
           aria-label="Toggle Menu"
         >
-          <FaBars className="text-xl" />
+          {isOpen === false ? <FaBars className="text-xl" /> : <FaTimes className="text-xl" />}
         </button>
 
         {/* Desktop Menu */}
@@ -94,9 +94,9 @@ export default function Header() {
                   {link.link}
                   <FaChevronDown className={`ml-1 text-xs transition-transform ${plansOpen ? 'transform rotate-180' : ''}`} />
                 </button>
-                
+
                 {plansOpen && (
-                  <div 
+                  <div
                     ref={dropdownRef}
                     className="absolute left-0 mt-2 w-48 bg-white dark:bg-gray-800 rounded-md shadow-lg py-1 z-50 border border-gray-200 dark:border-gray-700"
                     onMouseLeave={() => setPlansOpen(false)}
@@ -105,11 +105,16 @@ export default function Header() {
                       <Link
                         key={subKey}
                         href={subItem.href}
-                        className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-green-50 dark:hover:bg-[#1e3a1f]/20"
+                        onClick={() => {
+                          setPlansOpen(false);
+                          setIsOpen(false);
+                        }}
+                        className="block py-1 hover:bg-green-50 dark:hover:bg-[#1e3a1f]/20 rounded transition"
                       >
                         {subItem.name}
                       </Link>
                     ))}
+
                   </div>
                 )}
               </div>
@@ -124,7 +129,7 @@ export default function Header() {
             )
           ))}
         </nav>
-        
+
         {/* CTA Button */}
         <Link
           href="signin"
@@ -141,7 +146,7 @@ export default function Header() {
             {navLinks.map((link, key) => (
               link.link === "Plans" ? (
                 <div key={key} className="py-2 px-4">
-                  <button 
+                  <button
                     onClick={() => setPlansOpen(!plansOpen)}
                     className="flex items-center w-full justify-between"
                   >

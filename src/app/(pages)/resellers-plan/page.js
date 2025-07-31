@@ -16,7 +16,7 @@ function ResellersPlan() {
   }, [selectedFilter]);
 
   return (
-    <section className='py-16 md:m-3 min-h-screen rounded-3xl bg-no-repeat'
+    <section className='py-16 m-1 p-2 md:m-3 min-h-screen rounded-3xl bg-no-repeat'
       style={{
         backgroundImage: "url(https://cdn.prod.website-files.com/66e3cafc52638c58d5c746f1/66e7afd9c7a18dc168eb399f_Subtract.webp), url(https://cdn.prod.website-files.com/66e3cafc52638c58d5c746f1/66e7afd9f2c0f73944a569cd_gradient-bottom.webp), url(https://cdn.prod.website-files.com/66e3cafc52638c58d5c746f1/66e7afd977d7d990d1f43a84_gradient-top.webp), url(https://cdn.prod.website-files.com/66e3cafc52638c58d5c746f1/66e788fe3d7856003f3a3df9_home_grid.svg), linear-gradient(180deg, #004cd3, #a8d0f3 76%, #a8d0f3)",
         backgroundSize: "contain, cover, cover, contain, auto"
@@ -80,7 +80,7 @@ function ResellersPlan() {
                       </li>
                     ))}
                   </ul>
-                  <button className="mt-4 uppercase bg-gradient-to-r from-blue-400 to-purple-600 hover:from-blue-500 hover:to-purple-700 px-8 py-3 rounded-full text-sm font-semibold text-white transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                  <button className="w-full mt-4 uppercase bg-gradient-to-r from-blue-400 to-purple-600 hover:from-blue-500 hover:to-purple-700 px-8 py-3 rounded-full text-sm font-semibold text-white transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
                     Buy Now
                   </button>
                 </div>

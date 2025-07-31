@@ -1,28 +1,23 @@
 import React from 'react';
 import { FaLongArrowAltRight, FaCheckCircle } from "react-icons/fa";
 
+
 function Banner() {
   return (
     <section
-      className="w-full h-full flex items-center min-h-screen bg-bottom bg-no-repeat transition-all duration-300 ease-in-out"
+      className="relative w-full h-full flex items-center min-h-screen bg-bottom bg-no-repeat transition-all duration-300 ease-in-out"
       style={{ backgroundImage: "url('/imgs/banner-bg-2b.png')" }}
     >
-         {/* <div className="absolute bottom-[0px] max-md:left-[10px] md:right-[490px] z-[11] w-[170px]  animate-scale">
-                    <img src="/imgs/graph.png" alt="" />
-                </div>
-                <div className="absolute bottom-[0px] max-md:left-[10px] md:right-[490px] rocket top-24 w-24">
-                    <img src="/imgs/rocket-n.png" className='w-full' alt="" />
-                </div>
-                <div className="absolute bottom-[0px] max-md:left-[10px] md:right-[490px] elem-2">
-                    <img src="/imgs/element-2.webp?v=sdf" alt="" />
-                </div>
-                <div className="absolute bottom-[0px] max-md:left-[10px] md:right-[490px] elem-3">
-                    <img src="/imgs/technoo.png" alt="" />
-                </div> */}
-      <div className="py-8 px-3 md:max-w-3xl lg:max-w-5xl mx-auto relative flex flex-col md:flex-row items-center justify-between banner-container">
+
+
+      <div className="py-8 px-3 md:max-w-3xl lg:max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between banner-container">
 
         {/* LEFT SECTION */}
-        <div className="w-full md:w-1/2 text-center md:text-start">
+        <div className="relative w-full md:w-1/2 text-center md:text-start">
+          {/* rocket icon */}
+          <div className="absolute bottom-[0px] md:-left-[40px] md:transform md:-translate-x-1/2 -top-5 md:top-24 w-24">
+            <img src="/imgs/rocket-n.png" className='w-full' alt="" />
+          </div>
           <div
             className="wow animate__animated animate__fadeInLeft"
             data-wow-delay="0s"
@@ -53,7 +48,7 @@ function Banner() {
           >
             <a
               href="/"
-              className="px-3 md:px-4 py-1.5 rounded-3xl text-xs sm:text-sm md:text-base font-normal border-2 text-center text-white border-[#a807ff] bg-[#a807ff] hover:bg-black hover:border-black transition-all ease-in-out uppercase inline-flex items-center gap-2"
+              className="px-3 md:px-4 py-1.5 rounded-3xl text-xs sm:text-sm lg:text-base font-normal border-2 text-center text-white border-[#a807ff] bg-[#a807ff] hover:bg-black hover:border-black transition-all ease-in-out uppercase inline-flex items-center gap-2"
             >
               Get Started
               <FaLongArrowAltRight className="ms-0" />
@@ -61,7 +56,7 @@ function Banner() {
 
             <a
               href="/"
-              className="px-3 md:px-4 py-1.5 rounded-3xl text-xs sm:text-sm md:text-base font-normal border-2 text-center text-[#242423] bg-transparent border-[#242423] hover:bg-black hover:border-black hover:text-white transition-all ease-in-out uppercase inline-flex items-center gap-2"
+              className="px-3 md:px-4 py-1.5 rounded-3xl text-xs sm:text-sm lg:text-base font-normal border-2 text-center text-[#242423] bg-transparent border-[#242423] hover:bg-black hover:border-black hover:text-white transition-all ease-in-out uppercase inline-flex items-center gap-2"
             >
               Request Demo
               <FaLongArrowAltRight className="ms-0" />
@@ -81,7 +76,7 @@ function Banner() {
 
         {/* RIGHT SECTION IMAGE */}
         <div
-          className="w-full md:w-1/2 text-center wow animate__animated animate__flipInY"
+          className="relative w-full md:w-1/2 text-center wow animate__animated animate__flipInY"
           data-wow-delay="1s"
           style={{
             backfaceVisibility: "hidden",
@@ -89,6 +84,28 @@ function Banner() {
             transition: "transform 1s ease-in-out",
           }}
         >
+          <div
+            className="absolute -bottom-[68px] sm:left-[120px] md:left-auto md:right-[230px] lg:right-[330px] z-[11] w-[140px]"
+            style={{
+              animation: "pulseScale 2s ease-in-out infinite",
+            }}
+          >
+            <img src="/imgs/graph.png" alt="" />
+          </div>
+          <div className="absolute -bottom-[20px] right-0 left-auto sm:right-[70px] md:left-auto md:right-[0px] md:translate-x-[50px] lg:translate-0 lg:right-[30px] z-[21] w-[270px]"
+            style={{
+              animation: "pulseScale 2s ease-in-out infinite",
+            }}>
+            <img src="/imgs/element-2.webp" alt="" />
+          </div>
+          <div className="absolute z-[11] w-[150px] top-[0px] left-auto right-0 sm:right-[70px] md:left-auto md:right-[0px] md:translate-x-[50px] lg:translate-0 lg:right-[30px]" style={{
+            animation: "pulseScale 2s ease-in-out infinite",
+          }}>
+            <img src="/imgs/technoo.png" alt="" />
+          </div>
+
+
+
           <img
             src="/imgs/banner-demo-3.png"
             alt=""
@@ -96,7 +113,7 @@ function Banner() {
           />
         </div>
       </div>
-    </section>
+    </section >
   );
 }
 
