@@ -88,7 +88,7 @@ const Faq = () => {
                     <p className="mt-3 text-lg text-neutral-500 md:text-xl">Frequenty asked questions
                     </p>
                 </div>
-                <div className="mx-auto mt-8 grid divide-y divide-neutral-200">
+                <div className="grid grid-cols-2 gap-x-8 mx-auto mt-8 divide-y divide-neutral-200">
                     {faqData.map((faq,idx) => {
                         return (
                             <div key={idx} className="py-5">

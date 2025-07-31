@@ -3,6 +3,7 @@ import Footer from "./Componenets/Footer";
 import Header from "./Componenets/Header";
 import ServicesSection from "./Componenets/Services";
 import "../globals.css";
+import WOWInit from "../wow-init";
 
 
 export const metadata = {
@@ -27,6 +28,7 @@ export default function PagesLayout({ children }) {
       <body
         className={`overflow-x-hidden antialiased`}
       >
+        <WOWInit />
         <AnnouncementBar />
         <Header />
         {children}

@@ -11,13 +11,12 @@ import Marquee from "./Componenets/Marquee";
 import Packages from "./Componenets/Packages";
 import Publishers from "./Componenets/Publishers";
 import SalesFeaturesSection from "./Componenets/SalesFeaturesSection";
-import WOWInit from "../wow-init";
 
 export default function Home() {
 
   return (
     <>
-      <WOWInit />
+      
       <Banner />
       <Publishers />  
       <BoostPresenceSection />
