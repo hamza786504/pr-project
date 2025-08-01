@@ -3,7 +3,7 @@ import { FaPhone, FaEnvelope, FaLocationDot, FaFacebookF, FaXTwitter, FaInstagra
 
 export default function AnnouncementBar() {
   return (
-    <div className="w-full flex items-center bg-[#a807ffcf] transition-all duration-300 ease-in-out">
+    <div className="w-full flex items-center from-blue-500 to-purple-500 bg-gradient-to-r transition-all duration-300 ease-in-out">
       <div className="flex flex-1 items-stretch space-x-3 md:space-x-8 flex-col  px-3 md:px-6 lg:px-12 gap-1 sm:flex-row sm:justify-start sm:items-center text-white text-[12px] sm:text-xs">
 
         {/* Left - Phone */}

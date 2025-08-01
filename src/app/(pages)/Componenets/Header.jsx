@@ -133,7 +133,7 @@ export default function Header() {
         {/* CTA Button */}
         <Link
           href="signin"
-          className="hidden font-normal text-sm md:flex ml-6 hover:bg-transparent hover:border-[#163316] hover:text-[#163316] border border-[#163316] text-white bg-[#163316] px-4 py-1.5 rounded-full shadow-md transition"
+          className="hidden md:inline-flex ml-6 hover:bg-transparent hover:border-[#163316] hover:text-[#163316] border border-[#163316] bg-[#163316] justify-center uppercase bg-gradient-to-r from-blue-400 to-purple-600 hover:from-blue-500 hover:to-purple-700 px-8 py-3 rounded-full text-sm font-semibold text-white transition-all duration-300 shadow-lg hover:shadow-xl transform"
         >
           Sign In / UP
         </Link>
@@ -181,7 +181,7 @@ export default function Header() {
             {/* CTA Button for mobile */}
             <Link
               href="/signin"
-              className="mx-4 my-2 font-normal text-center px-4 py-1.5 text-sm rounded-full hover:bg-transparent hover:border-[#163316] hover:text-[#163316] border border-[#163316] text-white bg-[#163316] transition"
+              className="my-3 mx-3 flex items-center justify-center hover:bg-transparent hover:border-[#163316] hover:text-[#163316] border border-[#163316] bg-[#163316] uppercase bg-gradient-to-r from-blue-400 to-purple-600 hover:from-blue-500 hover:to-purple-700 px-8 py-3 rounded-full text-sm font-semibold text-white transition-all duration-300 shadow-lg hover:shadow-xl transform"
             >
               Sign In / UP
             </Link>

@@ -32,7 +32,7 @@ function Banner() {
             className="wow animate__animated animate__fadeInLeft inline-block text-xl sm:text-3xl md:text-5xl text-center md:text-start font-bold leading-tight my-1"
             data-wow-delay="0.2s"
           >
-            Lorem ipsum dolor <span className="text-[#6d02c0]">Facilis</span> adipisicing
+            Lorem ipsum dolor <span className="text-blue-500">Facilis</span> adipisicing
           </h1>
 
           <p
@@ -48,7 +48,7 @@ function Banner() {
           >
             <a
               href="/"
-              className="px-3 md:px-4 py-1.5 rounded-3xl text-xs sm:text-sm lg:text-base font-normal border-2 text-center text-white border-[#a807ff] bg-[#a807ff] hover:bg-black hover:border-black transition-all ease-in-out uppercase inline-flex items-center gap-2"
+              className="flex items-center md:px-4 sm:text-sm lg:text-base hover:bg-transparent hover:border-[#163316] hover:text-[#163316] border border-[#163316] bg-[#163316] uppercase bg-gradient-to-r from-blue-400 to-purple-600 hover:from-blue-500 hover:to-purple-700 px-8 py-3 rounded-full text-sm font-semibold text-white transition-all duration-300 shadow-lg hover:shadow-xl transform gap-2"
             >
               Get Started
               <FaLongArrowAltRight className="ms-0" />
@@ -56,7 +56,7 @@ function Banner() {
 
             <a
               href="/"
-              className="px-3 md:px-4 py-1.5 rounded-3xl text-xs sm:text-sm lg:text-base font-normal border-2 text-center text-[#242423] bg-transparent border-[#242423] hover:bg-black hover:border-black hover:text-white transition-all ease-in-out uppercase inline-flex items-center gap-2"
+              className="px-3 md:px-4 py-2 rounded-3xl text-xs sm:text-sm lg:text-base font-normal border-2 text-center text-[#242423] bg-transparent border-[#242423] hover:bg-black hover:border-black hover:text-white transition-all ease-in-out uppercase inline-flex items-center gap-2"
             >
               Request Demo
               <FaLongArrowAltRight className="ms-0" />
@@ -85,20 +85,20 @@ function Banner() {
           }}
         >
           <div
-            className="absolute -bottom-[68px] sm:left-[120px] md:left-auto md:right-[230px] lg:right-[330px] z-[11] w-[140px]"
+            className="absolute -bottom-[68px] sm:left-[120px] md:left-auto md:right-[230px] lg:right-[330px] z-[11] w-[120px] sm:w-[140px]"
             style={{
               animation: "pulseScale 2s ease-in-out infinite",
             }}
           >
             <img src="/imgs/graph.png" alt="" />
           </div>
-          <div className="absolute  z-[11] w-[200px] top-[0px] left-auto right-0 sm:right-[70px] md:left-auto md:right-[0px] md:translate-x-[50px] lg:translate-0 lg:right-[30px] "
+          <div className="absolute  z-[11] w-[200px] top-[70px] sm:top-0 left-auto right-[40px] sm:right-[70px] md:left-auto md:right-[0px] md:translate-x-[50px] lg:translate-0 lg:right-[30px]"
             style={{
               animation: "pulseScale 2s ease-in-out infinite",
             }}>
             <img src="/imgs/element-2.png" alt="" />
           </div>
-          <div className="absolute -bottom-[20px] right-0 left-auto sm:right-[70px] md:left-auto md:right-[0px] md:translate-x-[50px] lg:translate-0 lg:right-[30px] z-[21] w-[170px]" style={{
+          <div className="absolute -bottom-[20px] right-[40px] left-auto sm:right-[70px] md:left-auto md:right-[0px] md:translate-x-[50px] lg:translate-0 lg:right-[30px] z-[21] w-[130px] sm:w-[170px]" style={{
             animation: "pulseScale 2s ease-in-out infinite",
           }}>
             <img src="/imgs/technoo.png" alt="" />

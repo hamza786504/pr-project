@@ -81,7 +81,7 @@ export default function HowItWorks() {
             ))}
           </ol>
         </div>
-        <div className={`mt-12 wow !text-center animate__animated animate__fadeInUp" data-wow-delay="0.8s`}>
+        <div className={`mt-12 wow !text-center animate__animated animate__fadeInUp`} data-wow-delay="0.8s">
           <Button content="Get Started today" href="/" />
         </div>
       </div>

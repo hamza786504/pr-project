@@ -66,7 +66,7 @@ const Footer = () => {
         {!isChatOpen && (
           <button
             onClick={() => setIsChatOpen(true)}
-            className="bg-[#9B27B0] p-4 rounded-full text-white shadow-lg hover:bg-[#800ea3] transition duration-300"
+            className="from-blue-400 to-purple-600 bg-gradient-to-r p-4 rounded-full text-white shadow-lg hover:bg-[#800ea3] transition duration-300"
             aria-label="Open Help Chat"
           >
             <BsFillChatDotsFill size={24} />
@@ -78,7 +78,7 @@ const Footer = () => {
       {isChatOpen && (
            <div className="fixed bottom-20 right-6 z-50 w-80 bg-white rounded-xl shadow-2xl border border-gray-200">
       {/* Header */}
-      <div className="flex justify-between items-center px-4 py-3 bg-[#9B27B0] text-white rounded-t-xl">
+      <div className="flex justify-between items-center px-4 py-3 from-blue-400 to-purple-600 bg-gradient-to-r text-white rounded-t-xl">
         <div className="flex items-center gap-2">
           <div className="bg-white rounded-full p-1">
             <img src="/logo.png" alt="Logo" className="w-6 h-6" />
@@ -119,7 +119,7 @@ const Footer = () => {
 
       {/* Start conversation button */}
       <div className="border-t px-4 py-3">
-        <button className="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 py-2 rounded-md">
+        <button className="w-full from-blue-400 to-purple-600 bg-gradient-to-r text-white font-bold text-gray-800 py-2 rounded-md">
           Start Conversation
         </button>
       </div>
