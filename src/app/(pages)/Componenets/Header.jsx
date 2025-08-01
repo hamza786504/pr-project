@@ -109,7 +109,7 @@ export default function Header() {
                           setPlansOpen(false);
                           setIsOpen(false);
                         }}
-                        className="block py-1 hover:bg-green-50 dark:hover:bg-[#1e3a1f]/20 rounded transition"
+                        className="p-2 block py-1 hover:bg-green-50 dark:hover:bg-[#1e3a1f]/20 rounded transition"
                       >
                         {subItem.name}
                       </Link>

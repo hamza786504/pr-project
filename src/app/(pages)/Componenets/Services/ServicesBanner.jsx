@@ -5,7 +5,7 @@ import Link from 'next/link'
 function ServicesBanner({image, heading , description}) {
     return (
         <>
-            <section className="pb-40 relative bg-[#1A1C44] text-white py-16 px-4 sm:px-8 lg:px-16">
+            <section className="pb-40 relative bg-sky-600 text-white py-16 px-4 sm:px-8 lg:px-16">
                 <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center">
                     {/* Illustration */}
                     <div className="w-full lg:w-1/2 flex justify-center mb-10 lg:mb-0">
@@ -26,8 +26,8 @@ function ServicesBanner({image, heading , description}) {
                             {description}
                         </p>
                         <Link
-                            href="#"
-                            className="my-2 font-normal text-center px-4 py-1.5 text-base capitalize rounded-full hover:bg-transparent hover:border-white hover:text-white border border-white text-black bg-white transition"
+                            href="/"
+                            className="w-full uppercase bg-gradient-to-r from-blue-400 to-purple-600 hover:from-blue-500 hover:to-purple-700 px-8 py-3 rounded-full text-sm font-semibold text-white transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                         >
                             Start publishing
                         </Link>
