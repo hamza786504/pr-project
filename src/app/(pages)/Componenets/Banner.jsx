@@ -92,18 +92,17 @@ function Banner() {
           >
             <img src="/imgs/graph.png" alt="" />
           </div>
-          <div className="absolute -bottom-[20px] right-0 left-auto sm:right-[70px] md:left-auto md:right-[0px] md:translate-x-[50px] lg:translate-0 lg:right-[30px] z-[21] w-[270px]"
+          <div className="absolute  z-[11] w-[200px] top-[0px] left-auto right-0 sm:right-[70px] md:left-auto md:right-[0px] md:translate-x-[50px] lg:translate-0 lg:right-[30px] "
             style={{
               animation: "pulseScale 2s ease-in-out infinite",
             }}>
-            <img src="/imgs/element-2.webp" alt="" />
+            <img src="/imgs/element-2.png" alt="" />
           </div>
-          <div className="absolute z-[11] w-[150px] top-[0px] left-auto right-0 sm:right-[70px] md:left-auto md:right-[0px] md:translate-x-[50px] lg:translate-0 lg:right-[30px]" style={{
+          <div className="absolute -bottom-[20px] right-0 left-auto sm:right-[70px] md:left-auto md:right-[0px] md:translate-x-[50px] lg:translate-0 lg:right-[30px] z-[21] w-[170px]" style={{
             animation: "pulseScale 2s ease-in-out infinite",
           }}>
             <img src="/imgs/technoo.png" alt="" />
           </div>
-
 
 
           <img

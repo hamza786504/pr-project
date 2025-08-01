@@ -10,8 +10,8 @@ const Footer = () => {
   const [isChatOpen, setIsChatOpen] = useState(false);
 
   return (
-    <footer className="pt-10 bg-white text-gray-800 relative" style={{
-        backgroundImage: "url('/imgs/footer-bg.jpg')",
+    <footer className="pt-10 bg-white bg-bottom text-gray-800 relative" style={{
+        backgroundImage: "url('/imgs/banner-bg-2b.png')",
         backgroundSize: "cover"
       }}>
       <div className="md:max-w-3xl lg:max-w-5xl mx-auto px-4 py-10 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
