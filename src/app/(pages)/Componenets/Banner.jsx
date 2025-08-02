@@ -48,7 +48,7 @@ function Banner() {
           >
             <a
               href="/"
-              className="flex items-center md:px-4 sm:text-sm lg:text-base hover:bg-transparent hover:border-[#163316] hover:text-[#163316] border border-[#163316] bg-[#163316] uppercase bg-gradient-to-r from-blue-400 to-purple-600 hover:from-blue-500 hover:to-purple-700 px-8 py-3 rounded-full text-sm font-semibold text-white transition-all duration-300 shadow-lg hover:shadow-xl transform gap-2"
+              className="flex items-center md:px-4 hover:bg-transparent bg-[#163316] uppercase bg-gradient-to-r from-blue-400 to-purple-600 hover:from-blue-500 hover:to-purple-700 px-8 py-2 rounded-full text-xs sm:text-sm lg:text-base font-semibold text-white transition-all duration-300 shadow-lg hover:shadow-xl transform gap-2"
             >
               Get Started
               <FaLongArrowAltRight className="ms-0" />
@@ -56,7 +56,7 @@ function Banner() {
 
             <a
               href="/"
-              className="px-3 md:px-4 py-2 rounded-3xl text-xs sm:text-sm lg:text-base font-normal border-2 text-center text-[#242423] bg-transparent border-[#242423] hover:bg-black hover:border-black hover:text-white transition-all ease-in-out uppercase inline-flex items-center gap-2"
+              className="px-3 md:px-4 py-[6px] rounded-3xl text-xs sm:text-sm lg:text-base font-normal border-2 text-center text-[#242423] bg-transparent border-[#242423] hover:bg-black hover:border-black hover:text-white transition-all ease-in-out uppercase inline-flex items-center gap-2"
             >
               Request Demo
               <FaLongArrowAltRight className="ms-0" />

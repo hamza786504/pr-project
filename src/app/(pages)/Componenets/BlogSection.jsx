@@ -55,7 +55,7 @@ export default function BlogSection() {
               </Link>
               <a
                 href="#"
-                className="text-sm text-blue-600 hover:underline flex items-center gap-1"
+                className="mt-2 text-sm text-blue-600 hover:underline flex items-center gap-1"
               >
                 Read More <span>&#8594;</span>
               </a>
@@ -64,7 +64,7 @@ export default function BlogSection() {
         ))}
       </div>
 
-      <div className={`mt-12 wow text-center animate__animated animate__fadeInUp" data-wow-delay="0.8s`}>
+      <div className={`mt-12 wow text-center animate__animated animate__fadeInUp`} data-wow-delay="0.8s">
         <Button content="VISIT OUR BLOG" href="/news-room" />
       </div>
     </section>

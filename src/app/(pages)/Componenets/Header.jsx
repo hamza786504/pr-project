@@ -105,10 +105,7 @@ export default function Header() {
                       <Link
                         key={subKey}
                         href={subItem.href}
-                        onClick={() => {
-                          setPlansOpen(false);
-                          setIsOpen(false);
-                        }}
+
                         className="p-2 block py-1 hover:bg-green-50 dark:hover:bg-[#1e3a1f]/20 rounded transition"
                       >
                         {subItem.name}
@@ -122,6 +119,9 @@ export default function Header() {
               <Link
                 key={key}
                 href={`${link.href.toLocaleLowerCase()}`}
+                onClick={() => {
+                  setPlansOpen(false);
+                }}
                 className="hover:text-[#1e3a1f] transition duration-300"
               >
                 {link.link}
@@ -133,7 +133,7 @@ export default function Header() {
         {/* CTA Button */}
         <Link
           href="signin"
-          className="hidden md:inline-flex ml-6 hover:bg-transparent hover:border-[#163316] hover:text-[#163316] border border-[#163316] bg-[#163316] justify-center uppercase bg-gradient-to-r from-blue-400 to-purple-600 hover:from-blue-500 hover:to-purple-700 px-8 py-3 rounded-full text-sm font-semibold text-white transition-all duration-300 shadow-lg hover:shadow-xl transform"
+          className="hidden md:inline-flex ml-6 hover:bg-transparent  bg-[#163316] justify-center uppercase bg-gradient-to-r from-blue-400 to-purple-600 hover:from-blue-500 hover:to-purple-700 px-8 py-3 rounded-full text-sm font-semibold text-white transition-all duration-300 shadow-lg hover:shadow-xl transform"
         >
           Sign In / UP
         </Link>
@@ -159,6 +159,10 @@ export default function Header() {
                         <Link
                           key={subKey}
                           href={subItem.href}
+                          onClick={() => {
+                            setPlansOpen(false);
+                            setIsOpen(false);
+                          }}
                           className="block py-1 hover:bg-green-50 dark:hover:bg-[#1e3a1f]/20 rounded transition"
                         >
                           {subItem.name}
@@ -171,6 +175,10 @@ export default function Header() {
                 <Link
                   key={key}
                   href={link.href.toLocaleLowerCase()}
+                  onClick={() => {
+                    setPlansOpen(false);
+                    setIsOpen(false);
+                  }}
                   className="py-2 px-4 hover:bg-green-50 dark:hover:bg-[#1e3a1f]/20 rounded transition"
                 >
                   {link.link}
@@ -181,7 +189,7 @@ export default function Header() {
             {/* CTA Button for mobile */}
             <Link
               href="/signin"
-              className="my-3 mx-3 flex items-center justify-center hover:bg-transparent hover:border-[#163316] hover:text-[#163316] border border-[#163316] bg-[#163316] uppercase bg-gradient-to-r from-blue-400 to-purple-600 hover:from-blue-500 hover:to-purple-700 px-8 py-3 rounded-full text-sm font-semibold text-white transition-all duration-300 shadow-lg hover:shadow-xl transform"
+              className="my-3 mx-3 flex items-center justify-center hover:bg-transparent hover:text-[#163316] bg-[#163316] uppercase bg-gradient-to-r from-blue-400 to-purple-600 hover:from-blue-500 hover:to-purple-700 px-8 py-3 rounded-full text-sm font-semibold text-white transition-all duration-300 shadow-lg hover:shadow-xl transform"
             >
               Sign In / UP
             </Link>

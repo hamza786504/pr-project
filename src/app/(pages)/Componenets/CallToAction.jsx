@@ -12,13 +12,13 @@ export default function CallToAction() {
 
                     <Link
                         href="/"
-                        className="my-2 font-semibold text-center px-4 py-2.5 text-base capitalize rounded-full hover:bg-transparent hover:border-blue-500 hover:text-blue-500 border border-blue-500 text-white bg-blue-500 transition"
+                        className="my-2 text-center hover:bg-transparent hover:border-blue-500 border border-blue-500 bg-blue-500 uppercase bg-gradient-to-r from-blue-400 to-purple-600 hover:from-blue-500 hover:to-purple-700 hover:text-white px-8 py-3 rounded-full text-sm font-semibold text-white transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 wow animate__animated animate__pulse"
                     >
                         Request a quote
                     </Link>
                     <Link
                         href="/"
-                        className="my-2 font-semibold text-center px-4 py-2.5 text-base capitalize rounded-full hover:bg-transparent hover:border-blue-500 hover:text-blue-500 border border-blue-500 text-white bg-blue-500 transition"
+                        className="my-2 text-center hover:bg-transparent hover:border-blue-500 border border-blue-500 bg-blue-500 uppercase bg-gradient-to-r from-blue-400 to-purple-600 hover:from-blue-500 hover:to-purple-700 hover:text-white px-8 py-3 rounded-full text-sm font-semibold text-white transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 wow animate__animated animate__pulse"
                     >
                         Start publishing
                     </Link>
