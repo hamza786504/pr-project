@@ -1,9 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Sidebar from "../Components/Sidebar";
-import DashboardHeader from "../components/DashboardHeader";
-import DashboardTable from "../components/DashboardTable";
+
 
 export default function DashboardPage() {
   const [mobileOpen, setMobileOpen] = useState(false);
