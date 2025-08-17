@@ -9,11 +9,10 @@ export default function DashboardPage() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <div className="flex h-screen bg-gray-50">
-      {/* Sidebar */}
+    <>
+    {/* <div className="flex h-screen bg-gray-50">
       <Sidebar isOpen={mobileOpen} toggle={() => setMobileOpen(!mobileOpen)} />
 
-      {/* Content */}
       <div className="flex flex-col flex-1 overflow-hidden">
         <DashboardHeader toggleSidebar={() => setMobileOpen(!mobileOpen)} />
         <main className="p-4 overflow-y-auto flex-1">
@@ -21,6 +20,7 @@ export default function DashboardPage() {
           <DashboardTable />
         </main>
       </div>
-    </div>
+    </div> */}
+    </>
   );
 }
