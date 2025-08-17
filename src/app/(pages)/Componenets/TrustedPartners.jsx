@@ -1,0 +1,163 @@
+"use client";
+import Image from "next/image";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import React from 'react'
+
+const logos = [
+  "/imgs/trusted-1.webp",
+  "/imgs/trusted-2.webp",
+  "/imgs/trusted-3.webp",
+  "/imgs/trusted-4.webp",
+  "/imgs/trusted-5.webp",
+  "/imgs/trusted-6.webp",
+  "/imgs/trusted-7.webp",
+  "/imgs/trusted-8.webp"
+];
+
+function TrustedPartners() {
+      const leftToRightSettings = {
+    dots: true,
+    arrows: false,
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 1000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+    rtl: false, // Left to right
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+        }
+      }
+    ]
+  };
+
+  const rightToLeftSettings = {
+    ...leftToRightSettings,
+    rtl: true // Right to left
+  };
+
+  return (
+    <>
+       <section className="w-full bg-white py-12 px-4 md:px-16">
+        <div className="md:max-w-3xl lg:max-w-5xl mx-auto">
+          {/* Headings */}
+          <div className="text-center mb-8">
+            <p className="text-xl md:text-4xl font-semibold tracking-widest text-gray-700">
+              Trusted and celebrated as a top-tier solution.
+            </p>
+          </div>
+
+
+          {/* Carousel */}
+          <div className="space-y-4">
+            {/* 1st Slider - Right to Left (odd) */}
+            <Slider {...rightToLeftSettings}>
+              {logos.slice(0, 5).map((src, index) => (
+                <div key={index} className="my-16 px-2">
+                  <div className="flex items-center h-16 md:h-20">
+                    <Image
+                      src={src}
+                      alt={`Logo ${index}`}
+                      width={150}
+                      height={180}
+                      className="object-cover max-h-[240px] mx-auto"
+                    />
+                  </div>
+                </div>
+              ))}
+            </Slider>
+
+            {/* 2nd Slider - Left to Right (even) */}
+            <Slider {...leftToRightSettings}>
+              {logos.slice(6, 10).map((src, index) => (
+                <div key={index} className="px-2">
+                  <div className="flex items-center h-16 md:h-20">
+                    <Image
+                      src={src}
+                      alt={`Logo ${index}`}
+                      width={150}
+                      height={80}
+                      className="object-cover max-h-[67px] mx-auto"
+                    />
+                  </div>
+                </div>
+              ))}
+            </Slider>
+
+            {/* 3rd Slider - Right to Left (odd) */}
+            <Slider {...rightToLeftSettings}>
+              {logos.slice(11, 15).map((src, index) => (
+                <div key={index} className="px-2">
+                  <div className="flex items-center h-16 md:h-20">
+                    <Image
+                      src={src}
+                      alt={`Logo ${index}`}
+                      width={150}
+                      height={80}
+                      className="object-cover max-h-[67px] mx-auto"
+                    />
+                  </div>
+                </div>
+              ))}
+            </Slider>
+
+            {/* 4th Slider - Left to Right (even) */}
+            <Slider {...leftToRightSettings}>
+              {logos.slice(16, 20).map((src, index) => (
+                <div key={index} className="px-2">
+                  <div className="flex items-center h-16 md:h-20">
+                    <Image
+                      src={src}
+                      alt={`Logo ${index}`}
+                      width={150}
+                      height={80}
+                      className="object-cover max-h-[67px] mx-auto"
+                    />
+                  </div>
+                </div>
+              ))}
+            </Slider>
+
+            {/* 5th Slider - Right to Left (odd) */}
+            <Slider {...rightToLeftSettings}>
+              {logos.slice(21, 25).map((src, index) => (
+                <div key={index} className="px-2">
+                  <div className="flex items-center h-16 md:h-20">
+                    <Image
+                      src={src}
+                      alt={`Logo ${index}`}
+                      width={150}
+                      height={80}
+                      className="object-cover max-h-[67px] mx-auto"
+                    />
+                  </div>
+                </div>
+              ))}
+            </Slider>
+          </div>
+        </div>
+      </section>
+    </>
+  )
+}
+
+export default TrustedPartners

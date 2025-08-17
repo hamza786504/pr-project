@@ -11,17 +11,21 @@ import Marquee from "./Componenets/Marquee";
 import Packages from "./Componenets/Packages";
 import Publishers from "./Componenets/Publishers";
 import SalesFeaturesSection from "./Componenets/SalesFeaturesSection";
+import TrustedPartners from "./Componenets/TrustedPartners";
+
 
 export default function Home() {
 
+
   return (
     <>
-      
+
       <Banner />
-      <Publishers />  
+      <Publishers />
       <BoostPresenceSection />
       <HowItWorks />
       <SalesFeaturesSection />
+      <TrustedPartners />
       <FeaturedSection />
       <AppointmentSection />
       <CaseStudiesSection />
