@@ -16,13 +16,16 @@ function Banner() {
         <div className="relative w-full md:w-1/2 text-center md:text-start">
           {/* rocket icon */}
           <div className="absolute bottom-[0px] md:-left-[40px] md:transform md:-translate-x-1/2 -top-5 md:top-24 w-24">
-            <img src="/imgs/rocket-n.png" className='w-full' alt="" />
+            <img src="/imgs/rocket-n.png" className='w-full' alt="" 
+             style={{
+              animation: "pulseScale 2s ease-in-out infinite",
+            }}/>
           </div>
           <div
             className="wow animate__animated animate__fadeInLeft"
             data-wow-delay="0s"
           >
-            <div className="mb-4 flex items-center justify-center md:justify-start">
+            <div className="mb-4 flex ms-10 sm:ms-0 items-center justify-center md:justify-start">
               <div className="px-3 py-[4px] text-white font-medium rounded-full bg-gradient-to-r from-[#a238bb] to-[#e64671] bg-cover mr-[15px] text-[13px]"># 1</div>
               <div className="text-sm">Lorem, ipsum dolor.</div>
             </div>
@@ -92,13 +95,13 @@ function Banner() {
           >
             <img src="/imgs/graph.png" alt="" />
           </div>
-          <div className="absolute  z-[11] w-[200px] top-[70px] sm:top-0 left-auto right-[40px] sm:right-[70px] md:left-auto md:right-[0px] md:translate-x-[50px] lg:translate-0 lg:right-[30px]"
+          <div className="absolute  z-[11] w-[200px] top-[80px] sm:top-0 left-auto right-[1%] sm:right-[70px] md:left-auto md:right-[0px] md:translate-x-[50px] lg:translate-0 lg:right-[30px]"
             style={{
               animation: "pulseScale 2s ease-in-out infinite",
             }}>
             <img src="/imgs/element-2.png" alt="" />
           </div>
-          <div className="absolute -bottom-[20px] right-[40px] left-auto sm:right-[70px] md:left-auto md:right-[0px] md:translate-x-[50px] lg:translate-0 lg:right-[30px] z-[21] w-[130px] sm:w-[170px]" style={{
+          <div className="absolute -bottom-[20px] right-[3%] left-auto sm:right-[70px] md:left-auto md:right-[0px] md:translate-x-[50px] lg:translate-0 lg:right-[30px] z-[21] w-[130px] sm:w-[170px]" style={{
             animation: "pulseScale 2s ease-in-out infinite",
           }}>
             <img src="/imgs/technoo.png" alt="" />
