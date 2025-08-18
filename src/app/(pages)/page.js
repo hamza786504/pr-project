@@ -12,6 +12,7 @@ import Packages from "./Componenets/Packages";
 import Publishers from "./Componenets/Publishers";
 import SalesFeaturesSection from "./Componenets/SalesFeaturesSection";
 import TrustedPartners from "./Componenets/TrustedPartners";
+import WavyCarousel from "./Componenets/WavyCarousel";
 
 
 export default function Home() {
@@ -19,9 +20,9 @@ export default function Home() {
 
   return (
     <>
-
       <Banner />
-      <Publishers />
+      {/* <Publishers /> */}
+      <WavyCarousel />
       <BoostPresenceSection />
       <HowItWorks />
       <SalesFeaturesSection />

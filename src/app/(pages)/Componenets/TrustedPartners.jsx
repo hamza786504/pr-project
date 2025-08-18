@@ -42,9 +42,9 @@ function TrustedPartners() {
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 520,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                 }
             }
         ]
@@ -59,25 +59,21 @@ function TrustedPartners() {
         <>
             <section className="w-full bg-white py-12 px-4 md:px-16">
                 <div className="md:max-w-3xl lg:max-w-5xl mx-auto">
-                    {/* Headings */}
                     <div className="text-center mb-8">
                         <p className="text-xl md:text-4xl font-semibold tracking-widest text-gray-700">
                             Trusted and celebrated as a top-tier solution.
                         </p>
                     </div>
-
-
-                    {/* 1st Slider - Right to Left (odd) */}
                     <Slider {...rightToLeftSettings}>
-                        {logos.slice(0, 5).map((src, index) => (
+                        {logos.map((src, index) => (
                             <div key={index} className="my-24 px-2">
                                 <div className="flex items-center h-16 md:h-20">
                                     <Image
                                         src={src}
                                         alt={`Logo ${index}`}
-                                        width={150}
+                                        width={260}
                                         height={180}
-                                        className="object-cover max-h-[240px] mx-auto"
+                                        className="object-cover max-h-[450px] mx-auto"
                                     />
                                 </div>
                             </div>
