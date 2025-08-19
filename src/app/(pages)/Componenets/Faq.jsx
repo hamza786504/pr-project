@@ -81,8 +81,8 @@ const Faq = () => {
 
     return (
         <div
-            className="relative w-full bg-white px-6 pt-10 pb-8 mt-8 ring-1 ring-gray-900/5 sm:rounded-lg sm:px-10">
-            <div className="mx-auto px-5">
+            className="relative w-full bg-white px-0 pt-10 pb-8 mt-8 ring-1 ring-gray-900/5 sm:rounded-lg sm:px-10">
+            <div className="mx-auto px-3 sm:px-5">
                 <div className="flex flex-col items-center">
                     <h2 className="mt-5 text-center text-3xl font-bold tracking-tight md:text-5xl">FAQ</h2>
                     <p className="mt-3 text-lg text-neutral-500 md:text-xl">Frequenty asked questions

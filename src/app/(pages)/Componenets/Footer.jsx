@@ -10,21 +10,18 @@ const Footer = () => {
   const [isChatOpen, setIsChatOpen] = useState(false);
 
   return (
-    <footer className="pt-10 bg-white bg-bottom text-gray-800 relative" style={{
-        backgroundImage: "url('/imgs/banner-bg-2b.png')",
-        backgroundSize: "cover"
-      }}>
+    <footer className="pt-10 bg-gradient-to-r from-blue-500 to-purple-700 text-gray-800 bg-left relative">
       <div className="md:max-w-3xl lg:max-w-5xl mx-auto px-4 py-10 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
         <div>
-          <h3 className="text-xl md:text-2xl font-semibold mb-4">FG newswire.</h3>
-          <p className="text-sm md:text-base text-gray-600">
+          <h3 className="text-white text-xl md:text-2xl font-semibold mb-4">FG newswire.</h3>
+          <p className="text-sm md:text-base text-white">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur maxime unde iusto deserunt inventore provident perferendis cum earum dignissimos similique!
           </p>
         </div>
 
         <div>
-          <h3 className="text-xl md:text-2xl font-semibold mb-4">Usefull Links</h3>
-          <ul className="space-y-2 text-sm md:text-base text-gray-700">
+          <h3 className="text-white text-xl md:text-2xl font-semibold mb-4">Usefull Links</h3>
+          <ul className="space-y-2 text-sm md:text-base text-white">
             <li><Link href="#" className="hover:underline">Home</Link></li>
             <li><Link href="#" className="hover:underline">Terms of Services</Link></li>
             <li><Link href="#" className="hover:underline">News Room</Link></li>
@@ -36,28 +33,28 @@ const Footer = () => {
 
 
         <div className='space-y-3'>
-          <h3 className="text-xl md:text-2xl font-semibold mb-4">Contact Us</h3>
-          <Link href="tel:+923226612073" className="block hover:underline">+923226612073</Link>
-          <Link href="mailto:support@fgnewswire.com" className="block hover:underline">support@fgnewswire.com</Link>
-          <span href="#" className="block hover:underline">Weekdays: 09:00 AM - 7:00 PM</span>
+          <h3 className="text-white text-xl md:text-2xl font-semibold mb-4">Contact Us</h3>
+          <Link href="tel:+923226612073" className="text-white block hover:underline">+923226612073</Link>
+          <Link href="mailto:support@fgnewswire.com" className="text-white block hover:underline">support@fgnewswire.com</Link>
+          <span href="#" className="text-white block hover:underline">Weekdays: 09:00 AM - 7:00 PM</span>
           <div className="flex space-x-3 mt-5">
-            <Link href="www.facebook.com" className="text-lg w-10 h-10 bg-gradient-to-b from-blue-400 to-blue-600 text-white flex items-center justify-center rounded-full">
+            <Link href="www.facebook.com" className="text-lg w-10 h-10 bg-gradient-to-r from-blue-400 to-purple-600 text-white flex items-center justify-center rounded-full">
               <FaFacebookF />
             </Link>
-            <Link href="www.facebook.com" className="text-lg w-10 h-10 bg-gradient-to-b from-blue-400 to-blue-600 text-white flex items-center justify-center rounded-full">
+            <Link href="www.facebook.com" className="text-white text-lg w-10 h-10 bg-gradient-to-r from-blue-400 to-purple-600 flex items-center justify-center rounded-full">
               <FaTwitter />
             </Link>
-            <Link href="www.facebook.com" className="text-lg w-10 h-10 bg-gradient-to-b from-blue-400 to-blue-600 text-white flex items-center justify-center rounded-full font-bold"><BsTwitterX /></Link>
+            <Link href="www.facebook.com" className="text-lg w-10 h-10 bg-gradient-to-r from-blue-400 to-purple-600 text-white flex items-center justify-center rounded-full font-bold"><BsTwitterX /></Link>
           </div>
         </div>
       </div>
 
       {/* Bottom Line */}
       <div className="md:max-w-3xl lg:max-w-5xl mx-auto border-t text-sm md:text-base text-gray-600 py-4 px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
-        <p>© Copyright 2025 Zumvu Digital. All Rights Reserved.</p>
+        <p className='text-white'>© Copyright 2025 Zumvu Digital. All Rights Reserved.</p>
         <div className="flex space-x-4 mt-2 md:mt-0">
-          <Link href="#" className="hover:underline">Terms</Link>
-          <Link href="#" className="hover:underline">Privacy</Link>
+          <Link href="#" className="text-white hover:underline">Terms</Link>
+          <Link href="#" className="text-white hover:underline">Privacy</Link>
         </div>
       </div>
 

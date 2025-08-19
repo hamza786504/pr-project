@@ -95,7 +95,7 @@ function Banner() {
           >
             <img src="/imgs/graph.png" alt="" />
           </div>
-          <div className="absolute  z-[11] w-[200px] top-[80px] sm:top-0 left-auto right-[1%] sm:right-[70px] md:left-auto md:right-[0px] md:translate-x-[50px] lg:translate-0 lg:right-[30px]"
+          <div className="absolute  z-[11] w-[200px] top-[120px] sm:top-[30px] left-auto right-[1%] sm:right-[70px] md:left-auto md:right-[0px] md:translate-x-[50px] lg:translate-0 lg:right-[30px]"
             style={{
               animation: "pulseScale 2s ease-in-out infinite",
             }}>

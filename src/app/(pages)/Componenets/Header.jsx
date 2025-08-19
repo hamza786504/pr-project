@@ -20,6 +20,10 @@ export default function Header() {
       href: "/guidelines"
     },
     {
+      link: "Premium Publications",
+      href: "/premium-publications"
+    },
+    {
       link: "Plans",
       href: "/plans",
       submenu: [
