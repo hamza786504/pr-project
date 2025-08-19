@@ -126,9 +126,9 @@ export default function PremiumPublications() {
                                     <tr key={index} className={index % 2 === 0 ? 'bg-white' : 'bg-blue-50'}>
                                         <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
                                             {pub.url.includes('http') ? (
-                                                <a href={pub.url} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-purple-700 hover:underline transition-colors">
+                                                <span className="text-blue-600 hover:text-purple-700 hover:underline transition-colors">
                                                     {pub.url}
-                                                </a>
+                                                </span>
                                             ) : (
                                                 <span className="font-bold text-purple-700">{pub.url}</span>
                                             )}
