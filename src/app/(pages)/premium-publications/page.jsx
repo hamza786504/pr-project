@@ -1,5 +1,7 @@
+import Link from "next/link";
+
 export default function PremiumPublications() {
-     // Data for the publications table
+    // Data for the publications table
     const publicationsData = [
         { url: "https://www.forbes.com/", da: "95", tat: "3-5 weeks", linkType: "No Follow", sponsored: "No" },
         { url: "https://www.inc.com/", da: "95", tat: "3-5 weeks", linkType: "No Follow", sponsored: "No" },
@@ -150,6 +152,9 @@ export default function PremiumPublications() {
                                 ))}
                             </tbody>
                         </table>
+                    </div>
+                    <div className="flex my-10 items-center justify-center">
+                        <Link href="/signin" className="hidden md:inline-flex ml-6 hover:bg-transparent bg-[#163316] justify-center uppercase bg-gradient-to-r from-blue-400 to-purple-600 hover:from-blue-500 hover:to-purple-700 px-8 py-3 rounded-full text-sm font-semibold text-white transition-all duration-300 shadow-lg hover:shadow-xl transform">VIEW ALL PUBLICATIONS</Link>
                     </div>
                 </section>
 
