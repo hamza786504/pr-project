@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
         ></script>
       </head>
       <body
-        className={`overflow-x-hidden antialiased`}
+        className={`antialiased`}
       >
         {children}
       </body>

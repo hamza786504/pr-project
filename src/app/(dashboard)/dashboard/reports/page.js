@@ -1,7 +1,7 @@
 import { BiSearch } from 'react-icons/bi';
 
 
-export default function Dashboard() {
+export default function Reports() {
 
   return (
     <>
@@ -9,7 +9,7 @@ export default function Dashboard() {
       <main className="flex-1 overflow-y-scoll bg-gray-50 p-4 md:p-6">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-center justify-between mb-6">
-            <h1 className="text-xl font-bold text-gray-800 mb-4 md:mb-0">Manage Your Press Releases</h1>
+            <h1 className="text-xl font-bold text-gray-800 mb-4 md:mb-0">Press Releases Reports</h1>
 
             <form className="w-full md:w-auto">
               <div className="flex">
@@ -38,14 +38,13 @@ export default function Dashboard() {
                     <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Press Release Title</th>
                     <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Package Name</th>
                     <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Date</th>
-                    <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Action</th>
-                    <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+                    <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">View Reports</th>
                   </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-gray-200">
                   <tr>
                     <td colSpan="6" className="px-6 py-4 text-center">
-                      <p className="text-blue-600 text-xs font-bold">No Press Releases Found</p>
+                      <p className="text-blue-600 text-xs font-bold">No Report Found</p>
                     </td>
                   </tr>
                 </tbody>

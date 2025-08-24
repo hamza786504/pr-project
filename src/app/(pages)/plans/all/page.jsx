@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from 'react';
-import planData from "../../resellers-plan/plan";
+import planData from "./plan";
 import { FaStar } from 'react-icons/fa';
 import Image from 'next/image';
 import { BiCheck } from 'react-icons/bi';

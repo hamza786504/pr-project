@@ -24,7 +24,7 @@ function ResellersPlan() {
     >
       <div className="md:max-w-3xl lg:max-w-5xl mx-auto">
         <h1 className="text-center text-2xl md:text-5xl mt-4 font-semibold text-white">
-          Choose a plan when you’re ready
+          Choose a plan when you&apos;re ready
         </h1>
         <p className="text-sm md:text-base text-center max-w-4xl text-white mx-auto mt-5">
           Choose a plan that fits your business needs and budget. No hidden fees, no surprises—just straightforward pricing for powerful financial management.
